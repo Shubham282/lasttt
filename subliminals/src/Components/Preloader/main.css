@@ -1,0 +1,81 @@
+.mainl{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(80deg,#110e1f,#1b1730);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+
+.textl{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg1.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    font-size: 80px;
+    font-family: 'Gloss And Bloom';
+    font-size: 80px;
+    text-align: center;
+    line-height: 650px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-5deg) ;
+    color: #d2006b;
+    /* background-clip: text; */
+    -webkit-background-clip: text;
+    pointer-events: none;
+    animation: anim1 0.2s infinite,anim2 5s forwards;
+}
+
+@keyframes anim1 {
+    0%{background-image:url(bg1.jpg) ;}
+    10%{background-image:url(bg2.jpg) ;}
+    20%{background-image:url(bg3.jpg) ;}
+    30%{background-image:url(bg4.jpg) ;}
+    40%{background-image:url(bg5.jpg) ;}
+    50%{background-image:url(bg6.jpg) ;}
+    60%{background-image:url(bg7.jpg) ;}
+    70%{background-image:url(bg8.jpg) ;}
+    80%{background-image:url(bg9.jpg) ;}
+    90%{background-image:url(bg10.jpg) ;}
+    0%{background-image:url(bg11.jpg) ;}
+}
+
+@keyframes anim2 {
+    from{color: #d2006b;}
+    to{color: transparent;}
+}
+
+.titlel{
+    font-family: monospace;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.barl{
+    width: 80px;
+    height: 2px;
+    background-color: #282246;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+
+#fill{
+    width: 0%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
